@@ -1,6 +1,6 @@
 # Kubernetes client-go package sample
 
-This is a simple kubernetes [client-go](https://github.com/kubernetes/client-go) code sample.
+This is a simple code sample for using kubernetes [client-go](https://github.com/kubernetes/client-go) package.
 
 You can use this code to update a specify deployment's application image (More than one container in a pod).
 
@@ -38,6 +38,16 @@ Usage of ./update-deployment-image:
 - `-deployment`: deployment name
 - `-app`: (optional) application container name (default: app)
 - `-kubeconfig`: (optional) absolute path to the kubeconfig file (default "$HOME/.kube/config")
+
+## Example
+
+```
+./update-deployment-image -image test:Build_8 -deployment filebeat-test
+Found deployment
+name -> filebeat-test
+Old image -> test:Build_7
+New image -> test:Build_8
+```
 
 
 
