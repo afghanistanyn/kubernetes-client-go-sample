@@ -1,0 +1,9 @@
+language: go
+
+go:
+    - 1.7.4
+
+go_import_path: github.com/rootsongjc/kubernetes-client-go-sample
+
+script:
+    - make
