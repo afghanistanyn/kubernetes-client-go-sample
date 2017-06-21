@@ -7,6 +7,8 @@ go_import_path: github.com/rootsongjc/kubernetes-client-go-sample
 
 install:
     - go get github.com/tools/godep
+    - go get k8s.io/apimachinery/...
+    - go get github.com/kubernetes/client-go
 
 script:
     - make
